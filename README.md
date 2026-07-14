@@ -1,87 +1,133 @@
-<h1 align="center">Hey I am Assil And This is My Profile</h1>
-
-###
-
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=ts" height="60" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=nextjs" height="60" alt="nextjs logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=tailwind" height="60" alt="tailwindcss logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=aws" height="60" alt="amazonwebservices logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="60" alt="java logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="60" alt="c logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="60" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" height="60" alt="latex logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="60" alt="flutter logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" height="60" alt="dart logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" height="60" alt="debian logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60" alt="css logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="60" alt="jupyter logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" height="60" alt="nestjs logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="60" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="60" alt="pytorch logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="60" alt="linux logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" height="60" alt="vim logo"  />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&section=header&text=Assil&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=40&desc=Software%20Developer%20%7C%20Systems%20%26%20Web&descSize=18&descAlign=50&descAlignY=62&animation=fadeIn&theme=cobalt" width="100%"/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=00FF9C&center=true&vCenter=true&width=600&lines=root%40assil%3A~%24+whoami;Full-Stack+Developer;TypeScript+%2B+NestJS+%2B+React;Building+systems+that+don't+break;root%40assil%3A~%24+_" alt="Typing SVG" />
+
 </div>
 
-###
+<br/>
+
+```ansi
+┌──────────────────────────────────────────────────────────────────────────┐
+│ assil@github ~ % fastfetch                                               │
+├──────────────────────────────────────────────────────────────────────────┤
+│  assil@github                                                            │
+│  ──────────────                                                          │
+│  OS: Algeria/Linux                                                       │
+│  Host: Full-Stack Development                                            │
+│  Kernel: TypeScript 5.x                                                  │
+│  Shell: NestJS + React + Vite                                            │
+│  DE: RTL Arabic Interfaces                                               │
+│  Terminal: Neovim / VS Code                                              │
+│  CPU: Problem Solver (Math Core)                                         │
+│  Languages: TS · JS · Python · Java · C++                                │
+│  Focus: Public-Sector Budget Systems                                     │
+│  Status: Building نظام الإلتزامات                                        │
+└──────────────────────────────────────────────────────────────────────────┘
+```
 
 <div align="center">
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="linkedin logo"  />
-  <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="discord logo"  />
-  <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="twitch logo"  />
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="gmail logo"  />
+
+```
+                                       
+               :+xx+++:                
+           :xX$$$$$$$$$$X+.            
+         :$$$$$$$$$$$$$$$$$X:          
+        ;$$$&&&&&&$$$$$&$$$$Xx         
+       x$$$$$$XxxXXXXXXX$$$$$$.        
+       $$$+;;:::.:::.::::;;+X$X.       
+      +$$x;;::::.....:::::;;x$X.       
+      ;$$+;;;:::......::::;;x$$:       
+       $$xX$$XXXx+;;;xXXXXXXX$x        
+       xXXXxxXXXXX$$$XXXXXx+XX;        
+      ;xx+x;+++;;x+.x+;+++;;xx;.       
+      .;+;x;::.:+x:.:x;::::x;+:        
+       ;x;;;;;;;;;;::;;;;;;;;+:        
+        +x;;;:::;++xx+:::::;++         
+         +x+;::;;:;:;:;;::;x+          
+         .X$x;++x+++++x+;;xX+          
+          x$X++;;;;;;;;;;+XX           
+          +$$Xx+;::::::;x$$:           
+         $xx$&&$$Xx+xX$$$X+$           
+     :X$$$$xxX$&&&&&&&&$x+X$x          
+ :x$&&&&&&&&XxxXX$$$$Xxxx$$$$$$X;      
+&&&&&&&&&&&&&&$XXXXXXXX$$$$$&&$$$$$x.  
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$$$$X
+&&&&&&&&&&&&&&&&&&&&&&&&&$$$&&$&&&&$+$$
+$$$$$&&&$$&&$&&&&$$&&$$$$$$$$$$$$$$$$$$
+```
+
 </div>
 
-###
+<br/>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=YokaMakuto&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-  <img src="https://github-readme-stats.vercel.app/api?username=YokaMakuto&theme=dracula&show_icons=true&hide_border=false" height="150" alt="stats graph"  />
+
+### `~/tech-stack` 
+
+<img src="https://skillicons.dev/icons?i=ts,nextjs,react,nestjs,tailwind,py,java,cpp,c,js,html,css,latex,flutter,dart,aws,linux,debian,vim,jupyter" />
+
 </div>
 
-###
+<br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YokaMakuto&theme=dracula&layout=compact&hide_border=false" height="150" alt="top languages"  />
+
+### `~/stats` 
+
+<img height="165em" src="https://github-readme-stats.vercel.app/api?username=YokaMakuto&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF9C&icon_color=00FF9C&text_color=C9D1D9&ring_color=00FF9C" />
+<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YokaMakuto&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF9C&text_color=C9D1D9&langs_count=10" />
+
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=YokaMakuto&theme=highcontrast&hide_border=true&background=0D1117&stroke=00FF9C&ring=00FF9C&fire=00FF9C&currStreakLabel=00FF9C" />
+
 </div>
 
-###
+<br/>
 
-<br clear="both">
+```bash
+assil@github ~ % git log --author="Assil" --oneline --stat | wc -l
+# Live commit / LOC stats below — auto-generated, always current
+```
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=YokaMakuto&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF9C&text_color=C9D1D9&layout=compact" alt="coding time stats (requires WakaTime linked to GitHub)"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+### `~/activity`
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YokaMakuto/YokaMakuto/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YokaMakuto/YokaMakuto/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/YokaMakuto/YokaMakuto/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/YokaMakuto/YokaMakuto/output/pacman-contribution-graph.svg" width="100%">
 </picture>
 
-###
+<br/><br/>
 
-<div>
-  <img style="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=header&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=cobalt"  />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YokaMakuto&theme=react-dark&bg_color=0D1117&color=00FF9C&line=00FF9C&point=FFFFFF&hide_border=true" width="100%"/>
+
 </div>
 
-###
+<br/>
+
+<div align="center">
+
+### `~/connect`
+
+<a href="#"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=00FF9C&logoColor=000000&labelColor=0D1117&style=for-the-badge" height="32" alt="linkedin logo"/></a>
+<a href="#"><img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=00FF9C&logoColor=000000&labelColor=0D1117&style=for-the-badge" height="32" alt="discord logo"/></a>
+<a href="#"><img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=00FF9C&logoColor=000000&labelColor=0D1117&style=for-the-badge" height="32" alt="gmail logo"/></a>
+
+</div>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=gradient&customColorList=12&reversal=true" width="100%"/>
