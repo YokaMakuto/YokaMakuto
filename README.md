@@ -14,8 +14,14 @@
 
 <br/>
 
-```txt
-assil@github:~$ fastfetch --profile
+<div align="center">
+
+<img src="https://img.shields.io/badge/ENSTA-Algiers-00FF9C?style=for-the-badge&labelColor=0D1117&logo=academia&logoColor=00FF9C" alt="ENSTA Algiers"/>
+<img src="https://img.shields.io/badge/Algeria-0D1117?style=for-the-badge&labelColor=0D1117&color=00FF9C" alt="Algeria"/>
+
+<br/><br/>
+
+<pre align="center"><code>assil@github:~$ fastfetch --profile
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Identity   Assil Abderrezak BOUKHENNOUFA                                     │
 │ Location   Algiers, Algeria                                                  │
@@ -24,8 +30,9 @@ assil@github:~$ fastfetch --profile
 │ Shell      C++ / Python / TypeScript / Linux                                 │
 │ Focus      systems, AI, algorithms, security, and web architecture            │
 │ Protocol   build fast, keep it clean, make it useful                         │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
+└──────────────────────────────────────────────────────────────────────────────┘</code></pre>
+
+</div>
 
 <div align="center">
 
@@ -72,7 +79,15 @@ assil@github:~$ mission
 
 ### `~/stack`
 
-<img src="https://skillicons.dev/icons?i=c,cpp,cs,java,py,js,ts,react,nextjs,nodejs,nestjs,html,css,tailwind,linux,debian,aws,git,github,postgres,mongodb,firebase,vercel,vscode,vim,latex&perline=12" alt="Technical stack icons"/>
+<img src="https://skillicons.dev/icons?i=c,cpp,cs,java,py,js,ts,react,nextjs,nodejs,nestjs,html&perline=12" alt="Core technical stack icons"/>
+
+<br/>
+
+<img src="https://skillicons.dev/icons?i=css,tailwind,linux,debian,aws,git,github,postgres,mongodb,firebase,vercel,vscode&perline=12" alt="Tools and platform icons"/>
+
+<br/>
+
+<img src="https://skillicons.dev/icons?i=vim,latex&perline=2" alt="Extra tools icons"/>
 
 <br/><br/>
 
