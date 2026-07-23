@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=180&section=header&text=Assil%20Abderrezak&fontSize=54&fontColor=FFFFFF&fontAlign=50&fontAlignY=36&desc=AI%20Engineering%20%7C%20Systems%20Security%20%7C%20Olympiad%20Mathematics&descSize=17&descAlign=50&descAlignY=60&animation=fadeIn&color=0:020617,50:00FF9C,100:0D1117" width="100%" alt="Assil Abderrezak cyber terminal header"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2600&pause=600&color=00FF9C&center=true&vCenter=true&width=850&lines=assil%40github%3A~%24+init+--ai-engineer;ranked+1st+%40+ENSTA+AI+Engineering;systems+builder+%7C+security+researcher+%7C+math+olympiad+coach;kernel+defense+%2B+medical+AI+%2B+competitive+programming" alt="Typing terminal intro"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2400&pause=500&color=00FF9C&center=true&vCenter=true&width=850&lines=assil%40github%3A~%24+boot+--cyber-profile;AI+engineering+student+%40+ENSTA;systems+%2B+security+%2B+algorithms;building+fast%2C+clean%2C+useful+software" alt="Typing terminal intro"/>
 
 <br/>
 
@@ -19,11 +19,11 @@ assil@github:~$ fastfetch --profile
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Identity   Assil Abderrezak BOUKHENNOUFA                                     │
 │ Location   Algiers, Algeria                                                  │
-│ Runtime    3rd Year AI Engineering Student @ ENSTA                           │
-│ Kernel     Artificial Intelligence, Advanced Systems, Security Research      │
-│ Shell      C++ / Python / TypeScript / C / Java / Assembly                   │
-│ Focus      kernel defense, medical AI, algorithms, distributed web systems   │
-│ Protocol   build close to the metal, prove the math, ship useful software    │
+│ Runtime    AI Engineering Student @ ENSTA                                     │
+│ Kernel     Artificial Intelligence, Advanced Systems, Security Research       │
+│ Shell      C++ / Python / TypeScript / Linux                                 │
+│ Focus      systems, AI, algorithms, security, and web architecture            │
+│ Protocol   build fast, keep it clean, make it useful                         │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -39,9 +39,8 @@ assil@github:~$ fastfetch --profile
 assil@github:~$ whoami
 
 AI engineering student at ENSTA Algiers,
-ranked 1st in my cohort, building across
-the stack from kernel-level networking to
-medical imaging AI and production SaaS.
+building across systems, security,
+algorithms, and applied AI.
 
 I like systems that are mathematically
 clean, mechanically efficient, and hard
@@ -58,7 +57,7 @@ assil@github:~$ mission
 > low-level performance engineering
 > offensive and defensive security
 > algorithmic problem solving
-> mentoring olympiad-level students
+> clean production web systems
 ```
 
   </td>
@@ -69,91 +68,24 @@ assil@github:~$ mission
 
 <br/>
 
-### `~/education`
-
-```txt
-2024 - 2029  National School of Advanced Technologies, ENSTA
-             Engineering degree, Artificial Intelligence specialization
-```
-
-### `~/mission-log`
-
-```txt
-[2023 - now] Cybersecurity hackathons
-             Security researcher, two-time winner
-             System exploitation, penetration testing, cryptography,
-             network protocols, and low-level defenses.
-
-[2019 - 2025] International science olympiads
-              Algerian national representative at IOI, EMC, and IGO.
-              High-pressure algorithmic, mathematical, and geometric problem solving.
-
-[2019 - 2024] Algerian National Mathematics Olympiad
-              Gold medalist and four-time national champion.
-```
-
-### `~/research-and-builds`
-
-```txt
-kernel-ddos-defender.git
-├─ Linux kernel networking, systems programming, network security
-└─ Packet interception and mitigation before userspace for near-zero latency defense.
-
-trustway-saas.git
-├─ Next.js, NestJS, AWS, Supabase, PostgreSQL, Vercel
-└─ B2B e-commerce SaaS for transactional and logistics trust in Algeria.
-
-depth-from-distortion-endoscopy.git
-├─ mathematical modeling, AI, medical imaging
-└─ Identifiability-aware hybrid depth estimation from single-lens endoscopic distortion.
-
-ensta-physics-engine.git
-├─ JavaScript, C++, rigid body dynamics, collision detection
-└─ Browser-based physics simulations for ENSTA's educational platform.
-
-custom-renderer-engine.git
-├─ C++, computer graphics, linear algebra
-└─ Rasterization, shaders, texture mapping, physics, collision, and memory control.
-
-competitive-programming.git
-├─ C++, data structures, algorithmic optimization
-└─ Codeforces-style advanced solutions, proofs, and complexity analysis.
-```
-
 <div align="center">
 
-### `~/arsenal`
+### `~/stack`
 
-<img src="https://skillicons.dev/icons?i=c,cpp,cs,java,py,js,ts,html,css,react,nextjs,nodejs,nestjs,aws,linux,debian,git,github,postgres,mongodb,firebase,vercel,vscode,vim,latex" alt="Technical stack icons"/>
+<img src="https://skillicons.dev/icons?i=c,cpp,cs,java,py,js,ts,react,nextjs,nodejs,nestjs,html,css,tailwind,linux,debian,aws,git,github,postgres,mongodb,firebase,vercel,vscode,vim,latex&perline=12" alt="Technical stack icons"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/AI%20Engineering-00FF9C?style=for-the-badge&labelColor=0D1117&logo=openai&logoColor=00FF9C" alt="AI Engineering"/>
+<img src="https://img.shields.io/badge/Systems-00FF9C?style=for-the-badge&labelColor=0D1117&logo=linux&logoColor=00FF9C" alt="Systems"/>
+<img src="https://img.shields.io/badge/Security-00FF9C?style=for-the-badge&labelColor=0D1117&logo=hackthebox&logoColor=00FF9C" alt="Security"/>
+<img src="https://img.shields.io/badge/Algorithms-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codeforces&logoColor=00FF9C" alt="Algorithms"/>
+
+<br/><br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=1800&pause=500&color=8B949E&center=true&vCenter=true&width=760&lines=C%2B%2B+%2F+Python+%2F+TypeScript+%2F+Linux;Next.js+%2F+NestJS+%2F+PostgreSQL+%2F+AWS;math-heavy+AI+%2B+low-level+engineering" alt="Animated stack summary"/>
 
 </div>
-
-```txt
-Languages       C, C++, C#, Assembly, Java, Python, JavaScript, TypeScript, HTML, CSS
-Frameworks      React.js, Next.js, NestJS, C++ STL, NumPy, SymPy, SciPy
-Cloud & Tools   AWS, Linux, Vercel, Supabase, Git, GitHub, VS Code, Neovim
-Databases       PostgreSQL, MySQL, MongoDB, Firebase
-Math Core       algebra, analysis, optimization, number theory, geometry, quantum mechanics
-Coursework      DSA, OS, OOP, software engineering, cybersecurity, cloud computing, AI
-```
-
-### `~/leadership`
-
-```txt
-National Coordinator & Coach, Algerian Olympiad Preparation
-├─ Preparing students for national and international informatics/math olympiads.
-├─ Teaching advanced algorithms, discrete mathematics, and competitive programming.
-├─ Leading elite student teams during academic travel and international contests.
-└─ Helped establish a Mathematics Research Lab at the Sidi Abdellah hub.
-```
-
-### `~/linguistic-stack`
-
-```txt
-Arabic   Native
-English  C1 Advanced, Duolingo English Test certified
-French   B2 Upper Intermediate
-```
 
 <div align="center">
 
