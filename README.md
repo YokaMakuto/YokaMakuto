@@ -30,7 +30,8 @@
 │ Shell      C++ / Python / TypeScript / Linux                                 │
 │ Focus      systems, AI, algorithms, security, and web architecture           │
 │ Protocol   build fast, keep it clean, make it useful                         │
-└──────────────────────────────────────────────────────────────────────────────┘</code></pre>
+└──────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
 
 </div>
 
