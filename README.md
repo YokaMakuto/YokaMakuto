@@ -25,10 +25,10 @@
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Identity   Assil Abderrezak BOUKHENNOUFA                                     │
 │ Location   Algiers, Algeria                                                  │
-│ Runtime    AI Engineering Student @ ENSTA                                     │
-│ Kernel     Artificial Intelligence, Advanced Systems, Security Research       │
+│ Runtime    AI Engineering Student @ ENSTA                                    │
+│ Kernel     Artificial Intelligence, Advanced Systems, Security Research      │
 │ Shell      C++ / Python / TypeScript / Linux                                 │
-│ Focus      systems, AI, algorithms, security, and web architecture            │
+│ Focus      systems, AI, algorithms, security, and web architecture           │
 │ Protocol   build fast, keep it clean, make it useful                         │
 └──────────────────────────────────────────────────────────────────────────────┘</code></pre>
 
