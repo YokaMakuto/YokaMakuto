@@ -91,16 +91,29 @@ assil@github:~$ mission
 
 ### `~/github-telemetry`
 
-<img height="195em" src="https://raw.githubusercontent.com/YokaMakuto/YokaMakuto/main/profile-summary-card-output/github_dark/3-stats.svg" alt="GitHub stats"/>
-<img height="195em" src="https://raw.githubusercontent.com/YokaMakuto/YokaMakuto/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top languages"/>
+<img src="https://img.shields.io/github/followers/YokaMakuto?style=for-the-badge&label=followers&labelColor=0D1117&color=00FF9C&logo=github&logoColor=00FF9C" alt="GitHub followers"/>
+<img src="https://img.shields.io/github/stars/YokaMakuto?style=for-the-badge&label=stars&labelColor=0D1117&color=00FF9C&logo=github&logoColor=00FF9C" alt="GitHub stars"/>
+<img src="https://komarev.com/ghpvc/?username=YokaMakuto&style=for-the-badge&label=profile+views&color=00FF9C&labelColor=0D1117" alt="Profile views"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=YokaMakuto&theme=highcontrast&hide_border=true&background=0D1117&stroke=00FF9C&ring=00FF9C&fire=00FF9C&currStreakLabel=00FF9C" alt="GitHub streak"/>
+```txt
+assil@github:~$ telemetry --stable
+
+GitHub signal
+├─ source      : GitHub + CLOC workflow
+├─ profile     : github.com/YokaMakuto
+├─ languages   : TypeScript / Java / CSS / C++ / Python / C#
+├─ focus       : AI engineering, systems, security, full-stack architecture
+└─ reliability : no Vercel stats dependency
+```
 
 <br/><br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=YokaMakuto&theme=matrix&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4" alt="GitHub trophies"/>
+<img src="https://img.shields.io/badge/Systems%20Builder-00FF9C?style=for-the-badge&labelColor=0D1117&logo=linux&logoColor=00FF9C" alt="Systems Builder"/>
+<img src="https://img.shields.io/badge/Security%20Research-00FF9C?style=for-the-badge&labelColor=0D1117&logo=hackthebox&logoColor=00FF9C" alt="Security Research"/>
+<img src="https://img.shields.io/badge/AI%20Engineering-00FF9C?style=for-the-badge&labelColor=0D1117&logo=openai&logoColor=00FF9C" alt="AI Engineering"/>
+<img src="https://img.shields.io/badge/Competitive%20Programming-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codeforces&logoColor=00FF9C" alt="Competitive Programming"/>
 
 </div>
 
