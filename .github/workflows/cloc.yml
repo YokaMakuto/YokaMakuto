@@ -89,25 +89,74 @@ jobs:
           total_lines=$((total_blank + total_comment + total_code))
           updated="$(date -u '+%Y-%m-%d %H:%M UTC')"
           primary_languages="$(jq -r 'to_entries | map(select(.key != "header" and .key != "SUM")) | sort_by(.value.code) | reverse | .[0:6] | map(.key) | join(" / ")' "$workdir/cloc.json")"
+          primary_languages_badges="$(jq -r 'to_entries | map(select(.key != "header" and .key != "SUM")) | sort_by(.value.code) | reverse | .[0:6] | map(.key) | @tsv' "$workdir/cloc.json")"
 
           fmt() {
             printf "%'d" "$1"
           }
 
+          badge_value() {
+            printf '%s' "$1" | sed 's/,/%2C/g; s/ /%20/g; s/+/%2B/g; s/#/%23/g; s/&/%26/g; s/\//%2F/g'
+          }
+
+          badge_logo() {
+            case "$1" in
+              TypeScript) echo typescript ;;
+              JavaScript) echo javascript ;;
+              Python) echo python ;;
+              Java) echo openjdk ;;
+              "C++") echo cplusplus ;;
+              C) echo c ;;
+              "C#") echo csharp ;;
+              CSS) echo css3 ;;
+              HTML) echo html5 ;;
+              JSON) echo json ;;
+              YAML) echo yaml ;;
+              Markdown) echo markdown ;;
+              Shell) echo gnu-bash ;;
+              *) echo codeforces ;;
+            esac
+          }
+
+          repo_count_fmt="$(fmt "$repo_count")"
+          total_files_fmt="$(fmt "$total_files")"
+          total_lines_fmt="$(fmt "$total_lines")"
+          total_code_fmt="$(fmt "$total_code")"
+          repo_count_badge="$(badge_value "$repo_count_fmt")"
+          total_files_badge="$(badge_value "$total_files_fmt")"
+          total_lines_badge="$(badge_value "$total_lines_fmt")"
+          total_code_badge="$(badge_value "$total_code_fmt")"
+
           stats_file="$workdir/stats.md"
           {
             echo '<!-- CLOC-STATS:START -->'
-            echo '```txt'
-            echo 'assil@github:~$ cloc --all --private'
+            echo '<div align="center">'
             echo
-            echo 'Codebase footprint'
-            echo "├─ repositories scanned: $(fmt "$repo_count")"
-            echo "├─ source files        : $(fmt "$total_files")"
-            echo "├─ total lines         : $(fmt "$total_lines")"
-            echo "├─ code lines          : $(fmt "$total_code")"
-            echo "├─ primary languages   : ${primary_languages:-unknown}"
-            echo "└─ updated             : $updated"
-            echo '```'
+            echo "<img src=\"https://img.shields.io/badge/TOTAL%20LINES-$total_lines_badge-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codacy&logoColor=00FF9C\" height=\"42\" alt=\"Total lines\"/>"
+            echo
+            echo '<br/><br/>'
+            echo
+            echo "<img src=\"https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=36&duration=2400&pause=900&color=00FF9C&center=true&vCenter=true&width=720&lines=$total_lines_badge+total+lines;$total_code_badge+code+lines;$repo_count_badge+repositories+scanned\" alt=\"Animated codebase numbers\"/>"
+            echo
+            echo '<br/><br/>'
+            echo
+            echo "<img src=\"https://img.shields.io/badge/repos-$repo_count_badge-00FF9C?style=for-the-badge&labelColor=0D1117&logo=github&logoColor=00FF9C\" alt=\"Repositories scanned\"/>"
+            echo "<img src=\"https://img.shields.io/badge/source%20files-$total_files_badge-00FF9C?style=for-the-badge&labelColor=0D1117&logo=files&logoColor=00FF9C\" alt=\"Source files\"/>"
+            echo "<img src=\"https://img.shields.io/badge/code%20lines-$total_code_badge-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codeforces&logoColor=00FF9C\" alt=\"Code lines\"/>"
+            echo
+            echo '<br/><br/>'
+            echo
+            for language in $primary_languages_badges; do
+              logo="$(badge_logo "$language")"
+              encoded_language="$(badge_value "$language")"
+              echo "<img src=\"https://img.shields.io/badge/$encoded_language-0D1117?style=for-the-badge&logo=$logo&logoColor=00FF9C&labelColor=0D1117&color=00FF9C\" alt=\"$language\"/>"
+            done
+            echo
+            echo '<br/><br/>'
+            echo
+            echo "<sub>Updated automatically with CLOC on $updated</sub>"
+            echo
+            echo '</div>'
             echo '<!-- CLOC-STATS:END -->'
           } > "$stats_file"
 

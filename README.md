@@ -124,17 +124,34 @@ assil@github:~$ mission
 </div>
 
 <!-- CLOC-STATS:START -->
-```txt
-assil@github:~$ cloc --all --private
+<div align="center">
 
-Codebase footprint
-├─ repositories scanned: 16
-├─ source files        : 1294
-├─ total lines         : 206603
-├─ code lines          : 184950
-├─ primary languages   : TypeScript / JSON / YAML / Markdown / CSS / Java
-└─ updated             : 2026-07-23 03:23 UTC
-```
+<img src="https://img.shields.io/badge/TOTAL%20LINES-206%2C603-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codacy&logoColor=00FF9C" height="42" alt="Total lines"/>
+
+<br/><br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=36&duration=2400&pause=900&color=00FF9C&center=true&vCenter=true&width=720&lines=206%2C603+total+lines;184%2C950+code+lines;16+repositories+scanned" alt="Animated codebase numbers"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/repos-16-00FF9C?style=for-the-badge&labelColor=0D1117&logo=github&logoColor=00FF9C" alt="Repositories scanned"/>
+<img src="https://img.shields.io/badge/source%20files-1%2C294-00FF9C?style=for-the-badge&labelColor=0D1117&logo=files&logoColor=00FF9C" alt="Source files"/>
+<img src="https://img.shields.io/badge/code%20lines-184%2C950-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codeforces&logoColor=00FF9C" alt="Code lines"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/TypeScript-0D1117?style=for-the-badge&logo=typescript&logoColor=00FF9C&labelColor=0D1117&color=00FF9C" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/JSON-0D1117?style=for-the-badge&logo=json&logoColor=00FF9C&labelColor=0D1117&color=00FF9C" alt="JSON"/>
+<img src="https://img.shields.io/badge/YAML-0D1117?style=for-the-badge&logo=yaml&logoColor=00FF9C&labelColor=0D1117&color=00FF9C" alt="YAML"/>
+<img src="https://img.shields.io/badge/Markdown-0D1117?style=for-the-badge&logo=markdown&logoColor=00FF9C&labelColor=0D1117&color=00FF9C" alt="Markdown"/>
+<img src="https://img.shields.io/badge/CSS-0D1117?style=for-the-badge&logo=css3&logoColor=00FF9C&labelColor=0D1117&color=00FF9C" alt="CSS"/>
+<img src="https://img.shields.io/badge/Java-0D1117?style=for-the-badge&logo=openjdk&logoColor=00FF9C&labelColor=0D1117&color=00FF9C" alt="Java"/>
+
+<br/><br/>
+
+<sub>Updated automatically with CLOC on 2026-07-23 03:23 UTC</sub>
+
+</div>
 <!-- CLOC-STATS:END -->
 
 
