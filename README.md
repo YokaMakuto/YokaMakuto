@@ -179,17 +179,18 @@ French   B2 Upper Intermediate
 assil@github:~$ cloc --scope=all-repositories --visibility=public+private
 
 Codebase footprint
-├─ status              : waiting for first GitHub Actions run
-├─ repositories scanned: pending
-├─ source files        : pending
-├─ total lines         : pending
-├─ code lines          : pending
-├─ comments            : pending
-├─ blank lines         : pending
-├─ primary languages   : pending
-└─ updated             : pending
+├─ status              : generated from GitHub Actions
+├─ repositories scanned: 16
+├─ source files        : 1294
+├─ total lines         : 206603
+├─ code lines          : 184950
+├─ comments            : 2631
+├─ blank lines         : 19022
+├─ primary languages   : TypeScript / JSON / YAML / Markdown / CSS / Java
+└─ updated             : 2026-07-23 03:23 UTC
 ```
 <!-- CLOC-STATS:END -->
+
 
 <div align="center">
 
