@@ -15,15 +15,14 @@
 │  assil@github                                                            │
 │  ──────────────                                                          │
 │  OS: Algeria/Linux                                                       │
-│  Host: Full-Stack Development                                            │
-│  Kernel: TypeScript 5.x                                                  │
-│  Shell: NestJS + React + Vite                                            │
-│  DE: RTL Arabic Interfaces                                               │
+│  Host: Ai engineer ,Full-Stack Development                               │
+│  Kernel: Assembley                                                       │
+│  Shell: NestJS,React,Python,cpp....                                      │
 │  Terminal: Neovim / VS Code                                              │
 │  CPU: Problem Solver (Math Core)                                         │
 │  Languages: TS · JS · Python · Java · C++                                │
-│  Focus: Public-Sector Budget Systems                                     │
-│  Status: Building نظام الإلتزامات                                        │
+│  Focus: Budget and Analytical Systems , Machine Learning and Ai          │
+│  Status: Building Advanced Accountability app                            │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
