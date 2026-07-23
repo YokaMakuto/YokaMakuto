@@ -96,23 +96,23 @@ jobs:
 
           stats_file="$workdir/stats.md"
           cat > "$stats_file" <<EOF
-<!-- CLOC-STATS:START -->
-\`\`\`txt
-assil@github:~$ cloc --scope=all-repositories --visibility=public+private
+          <!-- CLOC-STATS:START -->
+          \`\`\`txt
+          assil@github:~$ cloc --scope=all-repositories --visibility=public+private
 
-Codebase footprint
-├─ status              : generated from GitHub Actions
-├─ repositories scanned: $(fmt "$repo_count")
-├─ source files        : $(fmt "$total_files")
-├─ total lines         : $(fmt "$total_lines")
-├─ code lines          : $(fmt "$total_code")
-├─ comments            : $(fmt "$total_comment")
-├─ blank lines         : $(fmt "$total_blank")
-├─ primary languages   : ${primary_languages:-unknown}
-└─ updated             : $updated
-\`\`\`
-<!-- CLOC-STATS:END -->
-EOF
+          Codebase footprint
+          ├─ status              : generated from GitHub Actions
+          ├─ repositories scanned: $(fmt "$repo_count")
+          ├─ source files        : $(fmt "$total_files")
+          ├─ total lines         : $(fmt "$total_lines")
+          ├─ code lines          : $(fmt "$total_code")
+          ├─ comments            : $(fmt "$total_comment")
+          ├─ blank lines         : $(fmt "$total_blank")
+          ├─ primary languages   : ${primary_languages:-unknown}
+          └─ updated             : $updated
+          \`\`\`
+          <!-- CLOC-STATS:END -->
+          EOF
 
           STATS_FILE="$stats_file" python3 - <<'PY'
 import os
