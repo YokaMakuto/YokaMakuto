@@ -20,8 +20,7 @@ assil@github:~$ fastfetch --profile
 │ Identity   Assil Abderrezak BOUKHENNOUFA                                     │
 │ Location   Algiers, Algeria                                                  │
 │ Runtime    3rd Year AI Engineering Student @ ENSTA                           │
-│ Rank       Valedictorian / Ranked 1st                                        │
-│ Kernel     Artificial Intelligence, Advanced Systems, Security Research       │
+│ Kernel     Artificial Intelligence, Advanced Systems, Security Research      │
 │ Shell      C++ / Python / TypeScript / C / Java / Assembly                   │
 │ Focus      kernel defense, medical AI, algorithms, distributed web systems   │
 │ Protocol   build close to the metal, prove the math, ship useful software    │
