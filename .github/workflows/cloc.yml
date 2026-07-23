@@ -1,0 +1,147 @@
+name: Update CLOC Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  cloc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cloc jq
+
+      - name: Generate CLOC stats
+        env:
+          GH_TOKEN: ${{ secrets.CLOC_PAT }}
+          GH_OWNER: YokaMakuto
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "CLOC_PAT secret is missing."
+            exit 1
+          fi
+
+          workdir="$(mktemp -d)"
+          repos_file="$workdir/repos.json"
+          clone_root="$workdir/repos"
+          mkdir -p "$clone_root"
+
+          page=1
+          printf '[]' > "$repos_file"
+          while :; do
+            response="$workdir/page-$page.json"
+            curl -fsSL \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/user/repos?visibility=all&affiliation=owner&per_page=100&page=$page" \
+              > "$response"
+
+            count="$(jq 'length' "$response")"
+            if [ "$count" -eq 0 ]; then
+              break
+            fi
+
+            jq -s '.[0] + .[1]' "$repos_file" "$response" > "$workdir/repos-next.json"
+            mv "$workdir/repos-next.json" "$repos_file"
+            page=$((page + 1))
+          done
+
+          jq -r --arg owner "$GH_OWNER" '.[] | select(.owner.login == $owner) | select(.archived == false) | select(.disabled == false) | .clone_url' "$repos_file" > "$workdir/clone_urls.txt"
+
+          repo_count=0
+          while IFS= read -r clone_url; do
+            [ -z "$clone_url" ] && continue
+            repo_dir="$clone_root/repo-$((repo_count + 1))"
+            auth_url="${clone_url/https:\/\//https:\/\/x-access-token:${GH_TOKEN}@}"
+            if git clone --quiet --depth 1 "$auth_url" "$repo_dir" 2>/dev/null; then
+              repo_count=$((repo_count + 1))
+            fi
+          done < "$workdir/clone_urls.txt"
+
+          if [ "$repo_count" -eq 0 ]; then
+            echo "No repositories found for $GH_OWNER."
+            exit 1
+          fi
+
+          cloc "$clone_root" \
+            --json \
+            --quiet \
+            --exclude-dir=.git,node_modules,vendor,dist,build,.next,out,coverage,target,.venv,venv,__pycache__,.idea,.vscode \
+            --exclude-ext=lock,map,min.js,min.css \
+            > "$workdir/cloc.json"
+
+          total_files="$(jq -r '.SUM.nFiles // 0' "$workdir/cloc.json")"
+          total_blank="$(jq -r '.SUM.blank // 0' "$workdir/cloc.json")"
+          total_comment="$(jq -r '.SUM.comment // 0' "$workdir/cloc.json")"
+          total_code="$(jq -r '.SUM.code // 0' "$workdir/cloc.json")"
+          total_lines=$((total_blank + total_comment + total_code))
+          updated="$(date -u '+%Y-%m-%d %H:%M UTC')"
+          primary_languages="$(jq -r 'to_entries | map(select(.key != "header" and .key != "SUM")) | sort_by(.value.code) | reverse | .[0:6] | map(.key) | join(" / ")' "$workdir/cloc.json")"
+
+          fmt() {
+            printf "%'d" "$1"
+          }
+
+          stats_file="$workdir/stats.md"
+          cat > "$stats_file" <<EOF
+<!-- CLOC-STATS:START -->
+\`\`\`txt
+assil@github:~$ cloc --scope=all-repositories --visibility=public+private
+
+Codebase footprint
+├─ status              : generated from GitHub Actions
+├─ repositories scanned: $(fmt "$repo_count")
+├─ source files        : $(fmt "$total_files")
+├─ total lines         : $(fmt "$total_lines")
+├─ code lines          : $(fmt "$total_code")
+├─ comments            : $(fmt "$total_comment")
+├─ blank lines         : $(fmt "$total_blank")
+├─ primary languages   : ${primary_languages:-unknown}
+└─ updated             : $updated
+\`\`\`
+<!-- CLOC-STATS:END -->
+EOF
+
+          STATS_FILE="$stats_file" python3 - <<'PY'
+import os
+from pathlib import Path
+
+readme = Path("README.md")
+stats = Path(os.environ["STATS_FILE"])
+content = readme.read_text(encoding="utf-8")
+replacement = stats.read_text(encoding="utf-8")
+start = "<!-- CLOC-STATS:START -->"
+end = "<!-- CLOC-STATS:END -->"
+
+if start not in content or end not in content:
+    raise SystemExit("CLOC markers not found in README.md")
+
+before = content.split(start, 1)[0]
+after = content.split(end, 1)[1]
+readme.write_text(before + replacement + after, encoding="utf-8")
+PY
+
+      - name: Commit updated stats
+        run: |
+          if git diff --quiet README.md; then
+            echo "CLOC stats already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update cloc stats"
+          git push
