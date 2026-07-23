@@ -97,16 +97,14 @@ assil@github:~$ mission
 
 <br/><br/>
 
-```txt
-assil@github:~$ telemetry --stable
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=1700&pause=450&color=00FF9C&center=true&vCenter=true&width=760&lines=github.signal%28%29;public+%2B+private+repos+tracked;AI+%2F+systems+%2F+security+%2F+algorithms;metrics+generated+with+GitHub+Actions" alt="Animated GitHub telemetry"/>
 
-GitHub signal
-├─ source      : GitHub + CLOC workflow
-├─ profile     : github.com/YokaMakuto
-├─ languages   : TypeScript / Java / CSS / C++ / Python / C#
-├─ focus       : AI engineering, systems, security, full-stack architecture
-└─ reliability : no Vercel stats dependency
-```
+<br/><br/>
+
+<img src="https://img.shields.io/badge/TypeScript-00FF9C?style=for-the-badge&labelColor=0D1117&logo=typescript&logoColor=00FF9C" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Python-00FF9C?style=for-the-badge&labelColor=0D1117&logo=python&logoColor=00FF9C" alt="Python"/>
+<img src="https://img.shields.io/badge/C%2B%2B-00FF9C?style=for-the-badge&labelColor=0D1117&logo=cplusplus&logoColor=00FF9C" alt="C++"/>
+<img src="https://img.shields.io/badge/Linux-00FF9C?style=for-the-badge&labelColor=0D1117&logo=linux&logoColor=00FF9C" alt="Linux"/>
 
 <br/><br/>
 
@@ -119,18 +117,21 @@ GitHub signal
 
 ### `~/codebase-footprint`
 
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=1800&pause=500&color=00FF9C&center=true&vCenter=true&width=760&lines=cloc+--all-repositories;scanning+public+%2B+private+code;counting+source+files+and+code+lines;updated+automatically" alt="Animated CLOC banner"/>
+
+</div>
+
 <!-- CLOC-STATS:START -->
 ```txt
-assil@github:~$ cloc --scope=all-repositories --visibility=public+private
+assil@github:~$ cloc --all --private
 
 Codebase footprint
-├─ status              : generated from GitHub Actions
 ├─ repositories scanned: 16
 ├─ source files        : 1294
 ├─ total lines         : 206603
 ├─ code lines          : 184950
-├─ comments            : 2631
-├─ blank lines         : 19022
 ├─ primary languages   : TypeScript / JSON / YAML / Markdown / CSS / Java
 └─ updated             : 2026-07-23 03:23 UTC
 ```
@@ -154,12 +155,5 @@ Codebase footprint
 </div>
 
 <br/>
-
-```txt
-assil@github:~$ contact --secure
-├─ email    : boukhennoufa.assil.ao@gmail.com
-├─ linkedin : linkedin.com/in/assil-abderrezak-boukhennoufa
-└─ github   : github.com/YokaMakuto
-```
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:0D1117,50:00FF9C,100:020617&reversal=true" width="100%" alt="Footer wave"/>

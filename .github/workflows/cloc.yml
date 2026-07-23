@@ -98,16 +98,13 @@ jobs:
           {
             echo '<!-- CLOC-STATS:START -->'
             echo '```txt'
-            echo 'assil@github:~$ cloc --scope=all-repositories --visibility=public+private'
+            echo 'assil@github:~$ cloc --all --private'
             echo
             echo 'Codebase footprint'
-            echo '├─ status              : generated from GitHub Actions'
             echo "├─ repositories scanned: $(fmt "$repo_count")"
             echo "├─ source files        : $(fmt "$total_files")"
             echo "├─ total lines         : $(fmt "$total_lines")"
             echo "├─ code lines          : $(fmt "$total_code")"
-            echo "├─ comments            : $(fmt "$total_comment")"
-            echo "├─ blank lines         : $(fmt "$total_blank")"
             echo "├─ primary languages   : ${primary_languages:-unknown}"
             echo "└─ updated             : $updated"
             echo '```'
