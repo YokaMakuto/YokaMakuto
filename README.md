@@ -74,13 +74,6 @@ assil@github:~$ mission
 ```txt
 2024 - 2029  National School of Advanced Technologies, ENSTA
              Engineering degree, Artificial Intelligence specialization
-             Ranked 1st / Valedictorian track
-
-2025 - 2028  University of the People
-             Bachelor of Science in Computer Science
-
-2021 - 2024  Mohamed El Aid El Khalifa High School
-             Baccalaureate, highest honors
 ```
 
 ### `~/mission-log`
