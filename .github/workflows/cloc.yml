@@ -95,43 +95,45 @@ jobs:
           }
 
           stats_file="$workdir/stats.md"
-          cat > "$stats_file" <<EOF
-          <!-- CLOC-STATS:START -->
-          \`\`\`txt
-          assil@github:~$ cloc --scope=all-repositories --visibility=public+private
+          {
+            echo '<!-- CLOC-STATS:START -->'
+            echo '```txt'
+            echo 'assil@github:~$ cloc --scope=all-repositories --visibility=public+private'
+            echo
+            echo 'Codebase footprint'
+            echo '├─ status              : generated from GitHub Actions'
+            echo "├─ repositories scanned: $(fmt "$repo_count")"
+            echo "├─ source files        : $(fmt "$total_files")"
+            echo "├─ total lines         : $(fmt "$total_lines")"
+            echo "├─ code lines          : $(fmt "$total_code")"
+            echo "├─ comments            : $(fmt "$total_comment")"
+            echo "├─ blank lines         : $(fmt "$total_blank")"
+            echo "├─ primary languages   : ${primary_languages:-unknown}"
+            echo "└─ updated             : $updated"
+            echo '```'
+            echo '<!-- CLOC-STATS:END -->'
+          } > "$stats_file"
 
-          Codebase footprint
-          ├─ status              : generated from GitHub Actions
-          ├─ repositories scanned: $(fmt "$repo_count")
-          ├─ source files        : $(fmt "$total_files")
-          ├─ total lines         : $(fmt "$total_lines")
-          ├─ code lines          : $(fmt "$total_code")
-          ├─ comments            : $(fmt "$total_comment")
-          ├─ blank lines         : $(fmt "$total_blank")
-          ├─ primary languages   : ${primary_languages:-unknown}
-          └─ updated             : $updated
-          \`\`\`
-          <!-- CLOC-STATS:END -->
-          EOF
-
-          STATS_FILE="$stats_file" python3 - <<'PY'
-import os
-from pathlib import Path
-
-readme = Path("README.md")
-stats = Path(os.environ["STATS_FILE"])
-content = readme.read_text(encoding="utf-8")
-replacement = stats.read_text(encoding="utf-8")
-start = "<!-- CLOC-STATS:START -->"
-end = "<!-- CLOC-STATS:END -->"
-
-if start not in content or end not in content:
-    raise SystemExit("CLOC markers not found in README.md")
-
-before = content.split(start, 1)[0]
-after = content.split(end, 1)[1]
-readme.write_text(before + replacement + after, encoding="utf-8")
-PY
+          update_script="$workdir/update_readme.py"
+          printf '%s\n' \
+            'import os' \
+            'from pathlib import Path' \
+            '' \
+            'readme = Path("README.md")' \
+            'stats = Path(os.environ["STATS_FILE"])' \
+            'content = readme.read_text(encoding="utf-8")' \
+            'replacement = stats.read_text(encoding="utf-8")' \
+            'start = "<!-- CLOC-STATS:START -->"' \
+            'end = "<!-- CLOC-STATS:END -->"' \
+            '' \
+            'if start not in content or end not in content:' \
+            '    raise SystemExit("CLOC markers not found in README.md")' \
+            '' \
+            'before = content.split(start, 1)[0]' \
+            'after = content.split(end, 1)[1]' \
+            'readme.write_text(before + replacement + after, encoding="utf-8")' \
+            > "$update_script"
+          STATS_FILE="$stats_file" python3 "$update_script"
 
       - name: Commit updated stats
         run: |
