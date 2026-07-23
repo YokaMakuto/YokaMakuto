@@ -159,8 +159,8 @@ French   B2 Upper Intermediate
 
 ### `~/github-telemetry`
 
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=YokaMakuto&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF9C&icon_color=00FF9C&text_color=C9D1D9&ring_color=00FF9C" alt="GitHub stats"/>
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YokaMakuto&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF9C&text_color=C9D1D9&langs_count=10" alt="Top languages"/>
+<img height="195em" src="https://raw.githubusercontent.com/YokaMakuto/YokaMakuto/main/profile-summary-card-output/github_dark/3-stats.svg" alt="GitHub stats"/>
+<img height="195em" src="https://raw.githubusercontent.com/YokaMakuto/YokaMakuto/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top languages"/>
 
 <br/><br/>
 
