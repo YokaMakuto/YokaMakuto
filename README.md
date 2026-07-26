@@ -142,17 +142,17 @@ assil@github:~$ mission
 <!-- CLOC-STATS:START -->
 <div align="center">
 
-<img src="https://img.shields.io/badge/TOTAL%20LINES-206%2C603-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codacy&logoColor=00FF9C" height="42" alt="Total lines"/>
+<img src="https://img.shields.io/badge/TOTAL%20LINES-206279-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codacy&logoColor=00FF9C" height="42" alt="Total lines"/>
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=36&duration=2400&pause=900&color=00FF9C&center=true&vCenter=true&width=720&lines=206%2C603+total+lines;184%2C950+code+lines;16+repositories+scanned" alt="Animated codebase numbers"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=36&duration=2400&pause=900&color=00FF9C&center=true&vCenter=true&width=720&lines=206279+total+lines;185106+code+lines;17+repositories+scanned" alt="Animated codebase numbers"/>
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/repos-16-00FF9C?style=for-the-badge&labelColor=0D1117&logo=github&logoColor=00FF9C" alt="Repositories scanned"/>
-<img src="https://img.shields.io/badge/source%20files-1%2C294-00FF9C?style=for-the-badge&labelColor=0D1117&logo=files&logoColor=00FF9C" alt="Source files"/>
-<img src="https://img.shields.io/badge/code%20lines-184%2C950-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codeforces&logoColor=00FF9C" alt="Code lines"/>
+<img src="https://img.shields.io/badge/repos-17-00FF9C?style=for-the-badge&labelColor=0D1117&logo=github&logoColor=00FF9C" alt="Repositories scanned"/>
+<img src="https://img.shields.io/badge/source%20files-1257-00FF9C?style=for-the-badge&labelColor=0D1117&logo=files&logoColor=00FF9C" alt="Source files"/>
+<img src="https://img.shields.io/badge/code%20lines-185106-00FF9C?style=for-the-badge&labelColor=0D1117&logo=codeforces&logoColor=00FF9C" alt="Code lines"/>
 
 <br/><br/>
 
@@ -165,10 +165,11 @@ assil@github:~$ mission
 
 <br/><br/>
 
-<sub>Updated automatically with CLOC on 2026-07-23 03:23 UTC</sub>
+<sub>Updated automatically with CLOC on 2026-07-26 06:17 UTC</sub>
 
 </div>
 <!-- CLOC-STATS:END -->
+
 
 
 <div align="center">
